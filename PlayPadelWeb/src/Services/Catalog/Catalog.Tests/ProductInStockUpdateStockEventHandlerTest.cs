@@ -8,6 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Catalog.Tests
@@ -62,8 +63,8 @@ namespace Catalog.Tests
         {
             var context = ApplicationDbContextInMemory.Get();
 
-            var productInStockId = 5;
-            var productId = 5;
+            var productInStockId = 3;
+            var productId = 3;
 
             // Add product
             context.Stocks.Add(new ProductInStock
@@ -97,6 +98,61 @@ namespace Catalog.Tests
                     throw new ProductInStockUpdateStockCommandException(ae.InnerException?.Message);
                 }
             }
+        }
+
+        [TestMethod]
+        public void TryToAddStockWhenProductExists()
+        {
+            var context = ApplicationDbContextInMemory.Get();
+
+            var productInStockId = 5;
+            var productId = 5;
+
+            // Add product
+            context.Stocks.Add(new ProductInStock
+            {
+                ProductInStockId = productInStockId,
+                ProductId = productId,
+                Stock = 1
+            });
+
+            context.SaveChanges();
+
+            var command = new ProductInStockUpdateStockEventHandler(context, GetIlogger);
+            command.Handle(new ProductInStockUpdateStockCommand
+            {
+                Items = new List<ProductInStockUpdateItem> {
+                    new ProductInStockUpdateItem {
+                        ProductId = productId,
+                        Stock = 4,
+                        Action = Common.Enums.ProductInStockAction.Add
+                    }
+                }
+            }, new System.Threading.CancellationToken()).Wait();
+
+            Assert.AreEqual(context.Stocks.First(x => x.ProductInStockId == productInStockId).Stock, 5);
+        }
+
+        [TestMethod]
+        public void TryToAddStockWhenProductNotExists()
+        {
+            var context = ApplicationDbContextInMemory.Get();
+            var command = new ProductInStockUpdateStockEventHandler(context, GetIlogger);
+
+            var productId = 7;
+
+            command.Handle(new ProductInStockUpdateStockCommand
+            {
+                Items = new List<ProductInStockUpdateItem> {
+                    new ProductInStockUpdateItem {
+                        ProductId = productId,
+                        Stock = 15,
+                        Action = Common.Enums.ProductInStockAction.Add
+                    }
+                }
+            }, new System.Threading.CancellationToken()).Wait();
+
+            Assert.AreEqual(context.Stocks.First(x => x.ProductId == productId).Stock, 15);
         }
 
     }
