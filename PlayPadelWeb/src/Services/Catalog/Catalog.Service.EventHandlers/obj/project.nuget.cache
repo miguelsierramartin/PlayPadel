@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6dUSa0Ld9zsQAyQv03MS7QyPtH633f4X0p72MBA7x13En7Px65MQ+mY4HSUmI2diUJL0tK5j65YNU53YIQ1QZQ==",
+  "dgSpecHash": "MioA6IPckiijMr2+cpa9WUAPLfkhuev7aV5pr211f0UFkTJB0y1N7OtE88n95rQGD51JOnPXtBt1nQDHZKZRZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Catalog\\Catalog.Service.EventHandlers\\Catalog.Service.EventHandlers.csproj",
   "expectedPackageFiles": [

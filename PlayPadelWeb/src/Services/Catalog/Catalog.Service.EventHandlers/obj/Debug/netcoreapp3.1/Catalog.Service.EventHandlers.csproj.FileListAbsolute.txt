@@ -1,8 +1,10 @@
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.deps.json
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Common.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Domain.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Persistence.Database.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Common.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Persistence.Database.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Domain.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Service.EventHandlers\obj\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.csprojAssemblyReference.cache
