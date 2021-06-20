@@ -1,10 +1,12 @@
 using Catalog.Domain;
 using Catalog.Service.EventHandlers;
 using Catalog.Service.EventHandlers.Commands;
+using Catalog.Service.EventHandlers.Exceptions;
 using Catalog.Tests.Config;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -53,5 +55,49 @@ namespace Catalog.Tests
                 }
             }, new System.Threading.CancellationToken());
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ProductInStockUpdateStockCommandException))]
+        public void TryToSubstractStockWhenProductHasntStock()
+        {
+            var context = ApplicationDbContextInMemory.Get();
+
+            var productInStockId = 5;
+            var productId = 5;
+
+            // Add product
+            context.Stocks.Add(new ProductInStock
+            {
+                ProductInStockId = productInStockId,
+                ProductId = productId,
+                Stock = 1
+            });
+
+            context.SaveChanges();
+
+            var command = new ProductInStockUpdateStockEventHandler(context, GetIlogger);
+
+            try
+            {
+                command.Handle(new ProductInStockUpdateStockCommand
+                {
+                    Items = new List<ProductInStockUpdateItem> {
+                    new ProductInStockUpdateItem {
+                        ProductId = productId,
+                        Stock = 2,
+                        Action = Common.Enums.ProductInStockAction.Substract
+                    }
+                }
+                }, new System.Threading.CancellationToken()).Wait();
+            }
+            catch (AggregateException ae)
+            {
+                if (ae.GetBaseException() is ProductInStockUpdateStockCommandException)
+                {
+                    throw new ProductInStockUpdateStockCommandException(ae.InnerException?.Message);
+                }
+            }
+        }
+
     }
 }
