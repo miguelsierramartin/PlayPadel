@@ -26,12 +26,6 @@ steps:
     version: '3.1.x'
     packageType: runtime
 
-- task: DotNetCoreCLI@2
-  displayName: Restore
-  inputs:
-    command: restore
-    projects: '$(Parameters.RestoreBuildProjects)'
-
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'PlayPadelSC'
