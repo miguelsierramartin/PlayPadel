@@ -24,7 +24,7 @@ steps:
 - task: SonarCloudPrepare@1
   displayName: 'Prepare analysis on SonarCloud'
   inputs:
-    SonarCloud: JuegaPadelSonar
+    SonarCloud: Analyze "demoPlayPadelSC"
     organization: miguelsierramartin
     projectKey: PlayPadelSC
      projectName:'demoPlayPadelSC'
