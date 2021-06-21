@@ -27,10 +27,6 @@ steps:
     SonarCloud: JuegaPadelSonar
     organization: miguelsierramartin
     projectKey: PlayPadelSC
-    extraProperties: 
-    sonar.exclusions=**/obj/**,**/*.dll
-    sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/**/coverage.opencover.xml
-    sonar.cs.vstest.reportsPaths=$(Agent.TempDirectory)/*.trx
      projectName:'demoPlayPadelSC'
 
 - task: DotNetCoreCLI@2
