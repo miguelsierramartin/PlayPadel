@@ -8,7 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Order.Service.Queries;
 using System.Reflection;
-
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using HealthChecks.UI.Client;
 
 namespace Customer.Api
 {
@@ -31,6 +33,14 @@ namespace Customer.Api
                     x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Customer")
                 )
             );
+
+            // Health check
+            services.AddHealthChecks()
+                        .AddCheck("selfCustomer", () => HealthCheckResult.Healthy())
+                        .AddDbContextCheck<ApplicationDbContext>(typeof(ApplicationDbContext).Name);
+
+            services.AddHealthChecksUI()
+                        .AddInMemoryStorage();
 
             // Event handlers
             services.AddMediatR(Assembly.Load("Customer.Service.EventHandlers"));
@@ -59,6 +69,14 @@ namespace Customer.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
+                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+                {
+                    Predicate = _ => true,
+                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                });
+                endpoints.MapHealthChecksUI();
+                
             });
         }
     }
