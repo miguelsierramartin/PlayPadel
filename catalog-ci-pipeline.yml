@@ -26,6 +26,13 @@ steps:
     version: '3.1.x'
     packageType: runtime
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    feedsToUse: 'select'
+    vstsFeed: 'c248a8b6-aea6-4062-96ce-a53d59376a78'
+
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'PlayPadelSC'
@@ -33,6 +40,8 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'PlayPadelSC'
     projectName: 'demoPlayPadelSC'
+
+
 
 - task: DotNetCoreCLI@2
   displayName: Build
