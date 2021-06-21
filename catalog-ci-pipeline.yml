@@ -22,12 +22,12 @@ steps:
     projects: '$(Parameters.RestoreBuildProjects)'
 
 - task: SonarCloudPrepare@1
-  displayName: 'Prepare analysis on SonarCloud'
   inputs:
-    SonarCloud: JuegaPadelSonar
-    organization: miguelsierramartin
-    projectKey: PlayPadelSC
-     projectName:'demoPlayPadelSC'
+    SonarCloud: 'PlayPadelSC'
+    organization: 'miguelsierramartin'
+    scannerMode: 'MSBuild'
+    projectKey: 'PlayPadelSC'
+    projectName: 'demoPlayPadelSC'
 
 - task: DotNetCoreCLI@2
   displayName: Build
