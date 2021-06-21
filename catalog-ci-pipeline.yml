@@ -20,6 +20,9 @@ steps:
   inputs:
     command: restore
     projects: '$(Parameters.RestoreBuildProjects)'
+    majorVersion: '3' # Required when versioningScheme == ByPrereleaseNumber
+    minorVersion: '1' # Required when versioningScheme == ByPrereleaseNumber
+    
 
 - task: SonarCloudPrepare@1
   inputs:
@@ -65,3 +68,4 @@ steps:
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
+
