@@ -40,7 +40,7 @@ steps:
   inputs:
     command: test
     projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
-    arguments: '--configuration $(BuildConfiguration)' /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
+    arguments: '--configuration $(BuildConfiguration)'
     testRunTitle: 'test run'
 
 - task: SonarCloudAnalyze@1
