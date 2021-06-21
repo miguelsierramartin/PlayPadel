@@ -26,8 +26,12 @@ steps:
   inputs:
     SonarCloud: JuegaPadelSonar
     organization: miguelsierramartin
-    projectKey: JuegaPadelSC
-    projectName: 'demoJuegaPadelSC '
+    projectKey: PlayPadelSC
+    extraProperties: 
+    sonar.exclusions=**/obj/**,**/*.dll
+    sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/**/coverage.opencover.xml
+    sonar.cs.vstest.reportsPaths=$(Agent.TempDirectory)/*.trx
+     projectName:'demoPlayPadelSC'
 
 - task: DotNetCoreCLI@2
   displayName: Build
@@ -40,14 +44,16 @@ steps:
   inputs:
     command: test
     projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
-    arguments: '--configuration $(BuildConfiguration)'
+    arguments: '--configuration $(BuildConfiguration)' /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
     testRunTitle: 'test run'
 
-- task: SonarSource.sonarcloud.ce096e50-6155-4de8-8800-4221aaeed4a1.SonarCloudAnalyze@1
+- task: SonarCloudAnalyze@1
   displayName: 'Run Code Analysis'
 
-- task: SonarSource.sonarcloud.38b27399-a642-40af-bb7d-9971f69712e8.SonarCloudPublish@1
+- task: SonarCloudPublish@1
   displayName: 'Publish Quality Gate Result'
+  inputs:
+    pollingTimeoutSec: '300'
 
 - task: DotNetCoreCLI@2
   displayName: Publish
