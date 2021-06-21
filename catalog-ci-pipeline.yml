@@ -27,6 +27,7 @@ steps:
     packageType: runtime
 
 - task: DotNetCoreCLI@2
+  displayName: Restore
   inputs:
     command: 'restore'
     projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
@@ -41,12 +42,11 @@ steps:
     projectKey: 'PlayPadelSC'
     projectName: 'demoPlayPadelSC'
 
-
-
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
-    projects: '$(Parameters.RestoreBuildProjects)'
+    command: 'build'
+    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
@@ -76,7 +76,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: false
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
     zipAfterPublish: True
 
