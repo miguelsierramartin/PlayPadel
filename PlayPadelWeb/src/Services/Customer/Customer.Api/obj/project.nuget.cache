@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wW91EJRyNu/wP5fSIW+jswcrahIXz46sWy9JIEjkDLlgXkVFv+0WeCrFRslcxe9PPLyW1Psp723rxG4prtfVxw==",
+  "dgSpecHash": "QBFVQlk0JCkY34wedLPqJeNIHJqp+QrRMMwUZ+NWl+suY36yuTBmYleLurhrSfXksSIVSX9PPKFeHSbvnrbg/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Customer\\Customer.Api\\Customer.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\migue\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

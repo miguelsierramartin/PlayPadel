@@ -1,12 +1,12 @@
-C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\bin\Debug\netcoreapp3.1\Customer.Domain.dll
-C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.AssemblyInfoInputs.cache
-C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.AssemblyInfo.cs
-C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.csprojAssemblyReference.cache
-C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.csproj.CoreCompileInputs.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\bin\Debug\netcoreapp3.1\Customer.Persitence.Database.deps.json
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\bin\Debug\netcoreapp3.1\Customer.Persitence.Database.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\bin\Debug\netcoreapp3.1\Customer.Persitence.Database.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\bin\Debug\netcoreapp3.1\Customer.Domain.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\bin\Debug\netcoreapp3.1\Customer.Domain.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.csprojAssemblyReference.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.AssemblyInfoInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.AssemblyInfo.cs
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.csproj.CoreCompileInputs.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.csproj.CopyComplete
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Persitence.Database\obj\Debug\netcoreapp3.1\Customer.Persitence.Database.pdb
