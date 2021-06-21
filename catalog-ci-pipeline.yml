@@ -18,12 +18,12 @@ steps:
 
 - task: UseDotNet@2
   inputs:
-    version: '5.0.x'
+    version: '3.1.x'
     includePreviewVersions: true # Required for preview versions
 
 - task: UseDotNet@2
   inputs:
-    version: '3.0.x'
+    version: '3.1.x'
     packageType: runtime
 
 - task: DotNetCoreCLI@2
@@ -47,12 +47,18 @@ steps:
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
-  displayName: Test
+  displayName: 'dotnet test'
   inputs:
-    command: test
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
-    arguments: '--configuration $(BuildConfiguration)'
-    testRunTitle: 'test run'
+    command: 'test'
+    arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+    publishTestResults: true
+    projects: '**/test-library/*.csproj' # update with your test project directory
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage report'
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
 
 - task: SonarCloudAnalyze@1
   displayName: 'Run Code Analysis'
