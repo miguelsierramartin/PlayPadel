@@ -1,17 +1,18 @@
+
+//using HealthChecks.UI.Client;
+using Identity.Domain;
 using Identity.Persistence.Database;
+using Identity.Service.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
+using System.Text;
 
 namespace Identity.Api
 {
@@ -35,8 +36,39 @@ namespace Identity.Api
                 )
             );
 
+            
 
+            // Identity
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            // Identity configuration
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+            });
+
+          // Event handlers
+            services.AddMediatR(Assembly.Load("Identity.Service.EventHandlers"));
+
+            // Query services
+            services.AddTransient<IUserQueryService, UserQueryService>();
+
+            // API Controllers
             services.AddControllers();
+            /*
+                        // Add Authentication
+                        var secretKey = Encoding.ASCII.GetBytes(
+                            Configuration.GetValue<string>("SecretKey")
+                        );
+
+                        */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +78,7 @@ namespace Identity.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
 
             app.UseHttpsRedirection();
 

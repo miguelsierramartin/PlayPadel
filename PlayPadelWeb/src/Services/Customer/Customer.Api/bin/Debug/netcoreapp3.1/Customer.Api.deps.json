@@ -35,6 +35,7 @@
           "AspNetCore.HealthChecks.UI.Client": "3.1.1",
           "AspNetCore.HealthChecks.UI.InMemory.Storage": "3.1.1",
           "Catalog.Persistence.Database": "1.0.0",
+          "Common.Logging": "1.0.0",
           "Customer.Persitence.Database": "1.0.0",
           "Customer.Service.EventHandlers": "1.0.0",
           "Customer.Service.Queries": "1.0.0",
@@ -2181,6 +2182,18 @@
         },
         "compile": {
           "Catalog.Persistence.Database.dll": {}
+        }
+      },
+      "Common.Logging/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.3",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.3"
+        },
+        "runtime": {
+          "Common.Logging.dll": {}
+        },
+        "compile": {
+          "Common.Logging.dll": {}
         }
       },
       "Customer.Domain/1.0.0": {
@@ -5004,6 +5017,11 @@
       "sha512": ""
     },
     "Catalog.Persistence.Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common.Logging/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

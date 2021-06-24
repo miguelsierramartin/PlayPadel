@@ -85,6 +85,7 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Custom
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Catalog.Domain.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Catalog.Persistence.Database.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Common.Logging.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Customer.Domain.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Customer.Persitence.Database.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Customer.Service.EventHandlers.dll
@@ -92,6 +93,7 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Custom
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Service.Common.Collection.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Service.Common.Mapping.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Service.Common.Paging.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Common.Logging.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Catalog.Persistence.Database.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Customer.Persitence.Database.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Api\bin\Debug\netcoreapp3.1\Customer.Service.EventHandlers.pdb

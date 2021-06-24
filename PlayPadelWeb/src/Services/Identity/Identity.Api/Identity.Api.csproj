@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -12,7 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common.Logging\Common.Logging.csproj" />
     <ProjectReference Include="..\Identity.Persistence.Database\Identity.Persistence.Database.csproj" />
+    <ProjectReference Include="..\Identity.Service.EventHandlers\Identity.Service.EventHandlers.csproj" />
+    <ProjectReference Include="..\Identity.Service.Queries\Identity.Service.Queries.csproj" />
   </ItemGroup>
 
 
