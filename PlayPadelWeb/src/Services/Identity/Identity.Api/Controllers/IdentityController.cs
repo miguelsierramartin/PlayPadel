@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Identity.Api.Controllers
 {
     [ApiController]
-    [Route("identity")]
+    [Route("v1/identity")]
     public class IdentityController : ControllerBase
     {
         private readonly ILogger<IdentityController> _logger;

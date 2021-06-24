@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,9 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Order.Persistence.Database;
+using Order.Service.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Order.Api
@@ -36,6 +39,12 @@ namespace Order.Api
                     x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Order")
                 )
             );
+
+            // Event handlers
+            services.AddMediatR(Assembly.Load("Order.Service.EventHandlers"));
+
+            // Query services
+            services.AddTransient<IOrderQueryService, OrderQueryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

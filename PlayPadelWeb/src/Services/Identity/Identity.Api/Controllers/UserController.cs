@@ -13,7 +13,7 @@ namespace Identity.Api.Controllers
 {
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
-    [Route("users")]
+    [Route("v1/users")]
     public class UserController : ControllerBase
     {
         private readonly IUserQueryService _userQueryService;
