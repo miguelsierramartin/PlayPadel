@@ -1,16 +1,21 @@
-
-//using HealthChecks.UI.Client;
+using Common.Logging;
+using HealthChecks.UI.Client;
 using Identity.Domain;
 using Identity.Persistence.Database;
 using Identity.Service.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
 using System.Text;
 
@@ -36,7 +41,14 @@ namespace Identity.Api
                 )
             );
 
-            
+            // Health check
+            services.AddHealthChecks()
+                        .AddCheck("self", () => HealthCheckResult.Healthy())
+                        .AddDbContextCheck<ApplicationDbContext>(typeof(ApplicationDbContext).Name)
+                        .AddApplicationInsightsPublisher();
+
+            services.AddHealthChecksUI()
+                .AddInMemoryStorage();
 
             // Identity
             services.AddIdentity<ApplicationUser, ApplicationRole>()
@@ -78,8 +90,13 @@ namespace Identity.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
-
+         /*   else
+            {
+                loggerFactory.AddSyslog(
+                    Configuration.GetValue<string>("Papertrail:host"),
+                    Configuration.GetValue<int>("Papertrail:port"));
+            }
+*/
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -88,6 +105,19 @@ namespace Identity.Api
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+                {
+                    Predicate = _ => true,
+                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                });
+
+                //nuget: AspNetCore.HealthChecks.UI
+                app.UseHealthChecksUI(options =>
+                {
+                    options.UIPath = "/healthchecks-ui";
+                    options.ApiPath = "/health-ui-api";
+                });
+
                 endpoints.MapControllers();
             });
         }
