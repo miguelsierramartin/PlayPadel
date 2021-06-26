@@ -1,0 +1,12 @@
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\bin\Debug\netcoreapp3.1\Identity.Persistence.Database.deps.json
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\bin\Debug\netcoreapp3.1\Identity.Persistence.Database.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\bin\Debug\netcoreapp3.1\Identity.Persistence.Database.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\bin\Debug\netcoreapp3.1\Identity.Domain.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\bin\Debug\netcoreapp3.1\Identity.Domain.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.csprojAssemblyReference.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.AssemblyInfoInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.AssemblyInfo.cs
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.csproj.CoreCompileInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.csproj.CopyComplete
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Identity\Identity.Persistence.Database\obj\Debug\netcoreapp3.1\Identity.Persistence.Database.pdb

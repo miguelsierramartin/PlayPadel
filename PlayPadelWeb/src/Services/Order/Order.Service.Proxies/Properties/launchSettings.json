@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Order.Service.Proxies": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tLBirkUildxQIkzvCqqxOeicAgmQUozgFM+AI5KOECWMTDifWhkI4HR0fdAUeBgtjz0ZASyct3YtvDYQgCI7Vw==",
+  "dgSpecHash": "Ur6hI2b5rt77JHhhUjfJKSGzhq6seIN8ySx3ZJhuoRzdoDx7OpE3vAdgWMpBmd52kXpmvisNGAuw7jSUi2jP6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Identity\\Identity.Api\\Identity.Api.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,9 @@
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.1\\microsoft.entityframeworkcore.tools.3.1.1.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.3\\microsoft.extensions.caching.memory.3.1.3.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.3\\microsoft.extensions.configuration.binder.3.1.3.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.3\\microsoft.extensions.dependencymodel.3.1.3.nupkg.sha512",

@@ -2,6 +2,8 @@
 using Catalog.Service.Queries;
 using Catalog.Services.Queries.DTOs;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Service.Common.Collection;
@@ -12,17 +14,17 @@ using System.Threading.Tasks;
 
 namespace Catalog.Api.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("v1/products")]
     public class ProductController : ControllerBase
     {
-
         private readonly IProductQueryService _productQueryService;
         private readonly ILogger<ProductController> _logger;
         private readonly IMediator _mediator;
 
-
-        public ProductController(ILogger<ProductController> logger,
+        public ProductController(
+            ILogger<ProductController> logger,
             IMediator mediator,
             IProductQueryService productQueryService)
         {
@@ -31,7 +33,6 @@ namespace Catalog.Api.Controllers
             _productQueryService = productQueryService;
         }
 
-        // prodcuts 
         [HttpGet]
         public async Task<DataCollection<ProductDto>> GetAll(int page = 1, int take = 10, string ids = null)
         {
@@ -45,7 +46,6 @@ namespace Catalog.Api.Controllers
             return await _productQueryService.GetAllAsync(page, take, products);
         }
 
-        // prodcuts/1
         [HttpGet("{id}")]
         public async Task<ProductDto> Get(int id)
         {

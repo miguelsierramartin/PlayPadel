@@ -8,8 +8,10 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Ser
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Order.Common.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Order.Domain.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Order.Persistence.Database.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Order.Service.Proxies.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Order.Persistence.Database.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Order.Service.Proxies.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Common.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Domain.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Order\Order.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Persistence.Database.pdb

@@ -15,7 +15,6 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
 namespace Identity.Service.EventHandlers
 {
     public class UserLoginEventHandler :
@@ -45,16 +44,15 @@ namespace Identity.Service.EventHandlers
             if (response.Succeeded)
             {
                 result.Succeeded = true;
-               // await GenerateToken(user, result);
+                await GenerateToken(user, result);
             }
 
             return result;
         }
 
-        /*
         private async Task GenerateToken(ApplicationUser user, IdentityAccess identity)
         {
-            var secretKey = _configuration.GetValue<string>("SecretKey");
+            var secretKey = _configuration.GetValue<string>("SecretKey", "this is my custom Secret key for authnetication");
             var key = Encoding.ASCII.GetBytes(secretKey);
 
             var claims = new List<Claim>
@@ -91,6 +89,5 @@ namespace Identity.Service.EventHandlers
 
             identity.AccessToken = tokenHandler.WriteToken(createdToken);
         }
-        */
     }
 }

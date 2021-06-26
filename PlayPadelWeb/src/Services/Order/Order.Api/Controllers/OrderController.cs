@@ -1,5 +1,6 @@
 ﻿using MediatR;
-//using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Order.Service.EventHandlers.Commands;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Order.Api.Controllers
 {
-    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("v1/orders")]
     public class OrderController : ControllerBase
@@ -21,11 +22,11 @@ namespace Order.Api.Controllers
 
         public OrderController(
             ILogger<OrderController> logger,
-             IMediator mediator,
+            IMediator mediator,
             IOrderQueryService orderQueryService)
         {
             _logger = logger;
-             _mediator = mediator;
+            _mediator = mediator;
             _orderQueryService = orderQueryService;
         }
 
@@ -41,12 +42,11 @@ namespace Order.Api.Controllers
             return await _orderQueryService.GetAsync(id);
         }
 
-       [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Create(OrderCreateCommand notification)
         {
             await _mediator.Publish(notification);
             return Ok();
         }
-      
     }
 }

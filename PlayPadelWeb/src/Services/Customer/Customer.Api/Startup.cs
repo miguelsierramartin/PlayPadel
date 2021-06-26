@@ -2,6 +2,7 @@ using Common.Logging;
 using Customer.Persistence.Database;
 using HealthChecks.UI.Client;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Order.Service.Queries;
 using System.Reflection;
 using System.Text;
@@ -44,8 +46,10 @@ namespace Customer.Api
             services.AddHealthChecks()
                         .AddCheck("self", () => HealthCheckResult.Healthy())
                         .AddDbContextCheck<ApplicationDbContext>(typeof(ApplicationDbContext).Name);
+                        
 
-            services.AddHealthChecksUI();
+            services.AddHealthChecksUI()
+                        .AddInMemoryStorage();
 
             // Event handlers
             services.AddMediatR(Assembly.Load("Customer.Service.EventHandlers"));
@@ -56,10 +60,9 @@ namespace Customer.Api
             // API Controllers
             services.AddControllers();
 
-            /*
-            // Add Authentication
+            //Add Authentication
             var secretKey = Encoding.ASCII.GetBytes(
-                Configuration.GetValue<string>("SecretKey")
+                Configuration.GetValue<string>("SecretKey", "this is my custom Secret key for authnetication")
             );
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
@@ -74,7 +77,7 @@ namespace Customer.Api
                     ValidateAudience = false
                 };
             });
-            */
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

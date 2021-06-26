@@ -1,0 +1,9 @@
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\bin\Debug\netcoreapp3.1\Customer.Domain.deps.json
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\bin\Debug\netcoreapp3.1\Customer.Domain.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\bin\Debug\netcoreapp3.1\Customer.Domain.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\obj\Debug\netcoreapp3.1\Customer.Domain.csprojAssemblyReference.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\obj\Debug\netcoreapp3.1\Customer.Domain.AssemblyInfoInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\obj\Debug\netcoreapp3.1\Customer.Domain.AssemblyInfo.cs
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\obj\Debug\netcoreapp3.1\Customer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\obj\Debug\netcoreapp3.1\Customer.Domain.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Domain\obj\Debug\netcoreapp3.1\Customer.Domain.pdb

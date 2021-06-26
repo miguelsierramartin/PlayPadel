@@ -1,16 +1,14 @@
-﻿using Catalog.Service.EventHandlers.Commands;
-using MediatR;
+﻿using MediatR;
 using Microsoft.Extensions.Logging;
 using Order.Domain;
 using Order.Persistence.Database;
 using Order.Service.EventHandlers.Commands;
-//using Order.Service.Proxies.Catalog;
-//using Order.Service.Proxies.Catalog.Commands;
+using Order.Service.Proxies.Catalog;
+using Order.Service.Proxies.Catalog.Commands;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using static Catalog.Common.Enums;
 
 namespace Order.Service.EventHandlers
 {
@@ -18,16 +16,16 @@ namespace Order.Service.EventHandlers
         INotificationHandler<OrderCreateCommand>
     {
         private readonly ApplicationDbContext _context;
-     //   private readonly ICatalogProxy _catalogProxy;
+        private readonly ICatalogProxy _catalogProxy;
         private readonly ILogger<OrderCreateEventHandler> _logger;
 
         public OrderCreateEventHandler(
             ApplicationDbContext context,
-          //  ICatalogProxy catalogProxy,
+            ICatalogProxy catalogProxy,
             ILogger<OrderCreateEventHandler> logger)
         {
             _context = context;
-            //_catalogProxy = catalogProxy;
+            _catalogProxy = catalogProxy;
             _logger = logger;
         }
 
@@ -38,6 +36,8 @@ namespace Order.Service.EventHandlers
 
             using (var trx = await _context.Database.BeginTransactionAsync())
             {
+                //Orquestar microservicios
+
                 // 01. Prepare detail
                 _logger.LogInformation("--- Preparing detail");
                 PrepareDetail(entry, notification);
@@ -55,8 +55,8 @@ namespace Order.Service.EventHandlers
 
                 // 04. Update Stocks
                 _logger.LogInformation("--- Updating stock");
-           /*     await _catalogProxy.UpdateStockAsync(new ProductInStockUpdateStockCommand
-                {
+                 await _catalogProxy.UpdateStockAsync(new ProductInStockUpdateStockCommand
+                 {
                     Items = notification.Items.Select(x => new ProductInStockUpdateItem
                     {
                         ProductId = x.ProductId,
@@ -64,7 +64,7 @@ namespace Order.Service.EventHandlers
                         Action = ProductInStockAction.Substract
                     })
                 });
-           */
+           
                 await trx.CommitAsync();
             }
 

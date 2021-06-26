@@ -33,6 +33,9 @@ namespace Identity.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // HttpContextAccessor
+            services.AddHttpContextAccessor();
+
             // DbContext
             services.AddDbContext<ApplicationDbContext>(
                 options => options.UseSqlServer(
@@ -48,7 +51,8 @@ namespace Identity.Api
                         .AddApplicationInsightsPublisher();
 
             services.AddHealthChecksUI()
-                .AddInMemoryStorage();
+                        .AddInMemoryStorage();
+
 
             // Identity
             services.AddIdentity<ApplicationUser, ApplicationRole>()
@@ -66,7 +70,7 @@ namespace Identity.Api
                 options.Password.RequiredUniqueChars = 1;
             });
 
-          // Event handlers
+            // Event handlers
             services.AddMediatR(Assembly.Load("Identity.Service.EventHandlers"));
 
             // Query services
@@ -74,51 +78,54 @@ namespace Identity.Api
 
             // API Controllers
             services.AddControllers();
-            /*
-                        // Add Authentication
-                        var secretKey = Encoding.ASCII.GetBytes(
-                            Configuration.GetValue<string>("SecretKey")
-                        );
 
-                        */
+            // Add Authentication
+            var secretKey = Encoding.ASCII.GetBytes(
+                 Configuration.GetValue<string>("SecretKey", "this is my custom Secret key for authnetication")
+             );
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(secretKey),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-         /*   else
+            else
             {
                 loggerFactory.AddSyslog(
                     Configuration.GetValue<string>("Papertrail:host"),
                     Configuration.GetValue<int>("Papertrail:port"));
             }
-*/
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
                 endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
                 {
                     Predicate = _ => true,
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
                 });
-
-                //nuget: AspNetCore.HealthChecks.UI
-                app.UseHealthChecksUI(options =>
-                {
-                    options.UIPath = "/healthchecks-ui";
-                    options.ApiPath = "/health-ui-api";
-                });
-
-                endpoints.MapControllers();
+                endpoints.MapHealthChecksUI();
             });
         }
     }
