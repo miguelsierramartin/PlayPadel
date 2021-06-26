@@ -62,7 +62,7 @@ namespace Customer.Api
 
             //Add Authentication
             var secretKey = Encoding.ASCII.GetBytes(
-                Configuration.GetValue<string>("SecretKey", "this is my custom Secret key for authnetication")
+                Configuration.GetValue<string>("SecretKey")
             );
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
