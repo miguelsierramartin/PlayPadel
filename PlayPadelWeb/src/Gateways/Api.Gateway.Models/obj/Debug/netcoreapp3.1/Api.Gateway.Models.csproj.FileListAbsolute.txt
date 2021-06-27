@@ -1,6 +1,7 @@
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\bin\Debug\netcoreapp3.1\Api.Gateway.Models.deps.json
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\bin\Debug\netcoreapp3.1\Api.Gateway.Models.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\bin\Debug\netcoreapp3.1\Api.Gateway.Models.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\obj\Debug\netcoreapp3.1\Api.Gateway.Models.csprojAssemblyReference.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\obj\Debug\netcoreapp3.1\Api.Gateway.Models.AssemblyInfoInputs.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\obj\Debug\netcoreapp3.1\Api.Gateway.Models.AssemblyInfo.cs
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.Models\obj\Debug\netcoreapp3.1\Api.Gateway.Models.csproj.CoreCompileInputs.cache

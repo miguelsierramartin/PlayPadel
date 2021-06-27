@@ -1,0 +1,12 @@
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\bin\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.deps.json
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\bin\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\bin\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\bin\Debug\netcoreapp3.1\Api.Gateway.Models.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\bin\Debug\netcoreapp3.1\Api.Gateway.Models.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.csprojAssemblyReference.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.AssemblyInfoInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.AssemblyInfo.cs
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.csproj.CoreCompileInputs.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.csproj.CopyComplete
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Gateways\Api.Gateway.WebClientTienda.Proxy\obj\Debug\netcoreapp3.1\Api.Gateway.WebClientTienda.Proxy.pdb

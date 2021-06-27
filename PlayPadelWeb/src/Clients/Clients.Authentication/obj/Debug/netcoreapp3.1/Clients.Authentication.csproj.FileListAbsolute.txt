@@ -8,6 +8,7 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authenti
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\bin\Debug\netcoreapp3.1\Clients.Authentication.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\bin\Debug\netcoreapp3.1\Clients.Authentication.Views.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\bin\Debug\netcoreapp3.1\Clients.Authentication.Views.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.csprojAssemblyReference.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.AssemblyInfoInputs.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.AssemblyInfo.cs
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.csproj.CoreCompileInputs.cache
@@ -34,4 +35,3 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authenti
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.genruntimeconfig.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.csproj.CopyComplete
-C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Clients\Clients.Authentication\obj\Debug\netcoreapp3.1\Clients.Authentication.csprojAssemblyReference.cache

@@ -65,14 +65,13 @@ namespace Api.Gateway.Proxies
 
         public async Task CreateAsync(OrderCreateCommand command)
         {
-
             var content = new StringContent(
                 JsonSerializer.Serialize(command),
                 Encoding.UTF8,
                 "application/json"
             );
 
-            var request = await _httpClient.PostAsync($"{_apiUrls.OrderUrl}/v1/orders", content);
+            var request = await _httpClient.PostAsync($"{_apiUrls.OrderUrl}v1/orders", content);
             request.EnsureSuccessStatusCode();
         }
     }

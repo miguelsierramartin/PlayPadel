@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Keot8/3+GZkSw+uhNlNAUuDgctkXdP+4CUrXU9H79M1WI4RyfnMDlWpsLr1lsmXARtVlbZO43sfWv7+GLjEwXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Gateways\\Api.Gateway.WebClientTienda.Proxy\\Api.Gateway.WebClientTienda.Proxy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
