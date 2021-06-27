@@ -25,7 +25,7 @@ steps:
   displayName: Restore
   inputs:
     command: 'restore'
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    projects: '**/src/Services/Identity/Identity.Api/*.csproj'
     feedsToUse: 'select'
     vstsFeed: 'c248a8b6-aea6-4062-96ce-a53d59376a78'
 
@@ -36,23 +36,19 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'PlayPadelSC'
     projectName: 'demoPlayPadelSC'
-    extraProperties: |
-      sonar.exclusions=**/obj/**,**/*.dll
-      sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/**/coverage.opencover.xml
-      sonar.cs.vstest.reportsPaths=$(Agent.TempDirectory)/*.trx
 
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
     command: 'build'
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    projects: '**/src/Services/Identity/Identity.Api/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet test'
   inputs:
     command: 'test'
-    arguments: --configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx 
+    arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
     publishTestResults: true
     projects: '**/test-library/*.csproj' # update with your test project directory
 
@@ -75,7 +71,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: false
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    projects: '**/src/Services/Identity/Identity.Api/*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
     zipAfterPublish: True
 
@@ -84,4 +80,3 @@ steps:
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
-
