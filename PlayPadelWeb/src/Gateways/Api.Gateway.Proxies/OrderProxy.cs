@@ -65,6 +65,7 @@ namespace Api.Gateway.Proxies
 
         public async Task CreateAsync(OrderCreateCommand command)
         {
+
             var content = new StringContent(
                 JsonSerializer.Serialize(command),
                 Encoding.UTF8,
