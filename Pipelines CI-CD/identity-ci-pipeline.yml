@@ -1,5 +1,12 @@
 trigger:
-- main
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - src/Services/Identity
+    exclude:
+    - README.md
 
 pool:
   vmImage: 'windows-latest'
