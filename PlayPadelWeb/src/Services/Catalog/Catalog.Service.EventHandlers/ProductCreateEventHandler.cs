@@ -24,7 +24,7 @@ namespace Catalog.Service.EventHandlers
             {
                 Nombre = notification.Name,
                 Descripcion = notification.Description,
-                Price = notification.Price
+                Precio = notification.Price
             });
 
             await _context.SaveChangesAsync();

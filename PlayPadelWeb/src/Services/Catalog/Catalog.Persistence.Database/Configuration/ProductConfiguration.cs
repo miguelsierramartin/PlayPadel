@@ -25,7 +25,7 @@ namespace Catalog.Persistence.Database.Configuration
                     ProductId = i,
                     Nombre = $"Product {i}",
                     Descripcion = $"Description for product {i}",
-                    Price = random.Next(100, 1000)
+                    Precio = random.Next(100, 1000)
                 });
             }
 
