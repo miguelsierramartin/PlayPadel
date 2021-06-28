@@ -6,6 +6,7 @@ trigger:
     include:
     - src/Services/Catalog
     exclude:
+    - Pipelines CI-CD/
     - README.md
 
 pool:

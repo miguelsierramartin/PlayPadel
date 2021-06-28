@@ -1,5 +1,18 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
 trigger:
-- master
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - src/Services/Order
+    exclude:
+    - Pipelines CI-CD/
+    - README.md
 
 pool:
   vmImage: 'windows-latest'
@@ -10,7 +23,6 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-
 - task: UseDotNet@2
   inputs:
     version: '3.1.x'
@@ -25,7 +37,7 @@ steps:
   displayName: Restore
   inputs:
     command: 'restore'
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    projects: '**/src/Services/Order/Order.Api/*.csproj'
     feedsToUse: 'select'
     vstsFeed: 'c248a8b6-aea6-4062-96ce-a53d59376a78'
 
@@ -41,7 +53,7 @@ steps:
   displayName: Build
   inputs:
     command: 'build'
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    projects: '**/src/Services/Order/Order.Api/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
@@ -71,7 +83,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: false
-    projects: '**/src/Services/Catalog/Catalog.Api/*.csproj'
+    projects: '**/src/Services/Order/Order.Api/*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
     zipAfterPublish: True
 
@@ -80,4 +92,3 @@ steps:
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
-

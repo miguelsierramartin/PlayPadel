@@ -16,6 +16,7 @@ trigger:
     include:
     - src/Services/Customer
     exclude:
+    - Pipelines CI-CD/
     - README.md
 
 
