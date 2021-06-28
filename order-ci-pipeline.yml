@@ -9,7 +9,7 @@ trigger:
     - master
   paths:
     include:
-    - src/*
+    - src/Services/Order
     exclude:
     - README.md
 pool:
