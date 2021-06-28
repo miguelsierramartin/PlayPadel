@@ -14,7 +14,7 @@ trigger:
     - master
   paths:
     include:
-    - src/*
+    - src/Services/Customer
     exclude:
     - README.md
 
