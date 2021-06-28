@@ -12,9 +12,7 @@ trigger:
   branches:
     include:
     - master
-  paths:
-    include:
-    - src/Services/Customer/*
+
 
 pool:
   vmImage: 'windows-latest'
