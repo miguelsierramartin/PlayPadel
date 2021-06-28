@@ -1,6 +1,6 @@
 # PlayPadel
 
-<h3>PIPELINES CI MICROSERVICIOS</h3>
+<h3>PIPELINES IC MICROSERVICIOS</h3>
 
 | Pipeline | Status | Pipeline | Status |
 | ------------- | ------------- | ------------- | ------------- |
