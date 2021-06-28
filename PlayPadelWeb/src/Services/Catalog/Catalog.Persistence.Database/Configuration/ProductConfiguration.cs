@@ -12,7 +12,7 @@ namespace Catalog.Persistence.Database.Configuration
         {
             entityBuilder.HasKey(x => x.ProductId);
 
-            entityBuilder.Property(x => x.Name).IsRequired().HasMaxLength(100);
+            entityBuilder.Property(x => x.Nombre).IsRequired().HasMaxLength(100);
             entityBuilder.Property(x => x.Description).IsRequired().HasMaxLength(500);
 
             var random = new Random();
@@ -23,7 +23,7 @@ namespace Catalog.Persistence.Database.Configuration
                 products.Add(new Product
                 {
                     ProductId = i,
-                    Name = $"Product {i}",
+                    Nombre = $"Product {i}",
                     Description = $"Description for product {i}",
                     Price = random.Next(100, 1000)
                 });

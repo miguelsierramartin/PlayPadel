@@ -31,7 +31,7 @@ namespace Catalog.Service.Queries
         {
             var collection = await _context.Products
                 .Where(x => products == null || products.Contains(x.ProductId))
-                .OrderBy(x => x.Name)
+                .OrderBy(x => x.Nombre)
                 .GetPagedAsync(page, take);
 
             return collection.MapTo<DataCollection<ProductDto>>();

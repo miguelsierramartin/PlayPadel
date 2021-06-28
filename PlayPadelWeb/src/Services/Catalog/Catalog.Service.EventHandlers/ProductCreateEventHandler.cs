@@ -22,7 +22,7 @@ namespace Catalog.Service.EventHandlers
         {
             await _context.AddAsync(new Product
             {
-                Name = notification.Name,
+                Nombre = notification.Name,
                 Description = notification.Description,
                 Price = notification.Price
             });

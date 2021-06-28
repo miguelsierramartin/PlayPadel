@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Persistence.Databas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Service.Queries", "src\Services\Catalog\Catalog.Service.Queries\Catalog.Service.Queries.csproj", "{7830F5CB-A9F4-4494-A33C-C2A7CD2CB813}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Common", "05. Common", "{65DB92D4-1F22-44D4-932C-C336342563C2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Common", "06. Common", "{65DB92D4-1F22-44D4-932C-C336342563C2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Common.Collection", "src\Services\Common\Service.Common.Collection\Service.Common.Collection.csproj", "{C264FF2F-ED7A-4949-BA1C-659B34E4A355}"
 EndProject
@@ -127,11 +127,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Gateway.Proxies", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Gateway.Models", "src\Gateways\Api.Gateway.Models\Api.Gateway.Models.csproj", "{9A80BB19-E0E3-4078-83AB-BDACD8310BF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clients.Authentication", "src\Clients\Clients.Authentication\Clients.Authentication.csproj", "{C309BC2C-60E7-4390-AA9B-A1E8176D2BC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clients.Authentication", "src\Clients\Clients.Authentication\Clients.Authentication.csproj", "{C309BC2C-60E7-4390-AA9B-A1E8176D2BC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clients.WebClient", "src\Clients\Clients.WebClient\Clients.WebClient.csproj", "{E10204C8-71B8-42EF-92C0-EC56E23F619C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clients.WebClient", "src\Clients\Clients.WebClient\Clients.WebClient.csproj", "{E10204C8-71B8-42EF-92C0-EC56E23F619C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Gateway.WebClientTienda.Proxy", "src\Gateways\Api.Gateway.WebClientTienda.Proxy\Api.Gateway.WebClientTienda.Proxy.csproj", "{6FF6E1FB-A0A2-4BE9-8BA0-D761D2661A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Gateway.WebClientTienda.Proxy", "src\Gateways\Api.Gateway.WebClientTienda.Proxy\Api.Gateway.WebClientTienda.Proxy.csproj", "{6FF6E1FB-A0A2-4BE9-8BA0-D761D2661A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Alquiler", "05. Alquiler", "{AFD0C1E5-8C73-45DA-A4AF-2BE04445A0E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -345,6 +347,7 @@ Global
 		{C309BC2C-60E7-4390-AA9B-A1E8176D2BC3} = {C2289A57-D651-4CDA-9DEC-F07CB1BB899E}
 		{E10204C8-71B8-42EF-92C0-EC56E23F619C} = {C2289A57-D651-4CDA-9DEC-F07CB1BB899E}
 		{6FF6E1FB-A0A2-4BE9-8BA0-D761D2661A6C} = {A22FB44E-F22D-4713-B67F-29F9E81B4DE4}
+		{AFD0C1E5-8C73-45DA-A4AF-2BE04445A0E9} = {7DFE120D-9FDC-4470-8451-1731290263A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EAE02E9-B7E9-45BC-B491-06887DC2A02C}
