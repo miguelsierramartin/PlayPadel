@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MWYp5GAzdIMiPURc37oQgSg5MaQaq9bamZgs5OJDwnoLcsMkQwkj6Fdzx163cB3Yy4kVh7aaefYtTfc0PBH33Q==",
+  "dgSpecHash": "D1PdS8O1U2CLzRNnZyMUIVfHqV7+MjtHL+fBku/yPs6YoyrRlJWU49rVoXhDBEovg90F1k0K0KoCkO1X2H2NyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Identity\\Identity.Service.EventHandlers\\Identity.Service.EventHandlers.csproj",
   "expectedPackageFiles": [
