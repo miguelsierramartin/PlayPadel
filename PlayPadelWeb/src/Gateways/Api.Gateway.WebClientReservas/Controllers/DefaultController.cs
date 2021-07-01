@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Gateway.WebClientTienda.Controllers
+namespace Api.Gateway.WebClientReservas.Controllers
 {
     [ApiController]
     [Route("/")]
@@ -9,7 +9,7 @@ namespace Api.Gateway.WebClientTienda.Controllers
         [HttpGet]
         public string Index()
         {
-            return "Running Gateway Tienda..";
+            return "Running Gateway Reserva..";
         }
     }
 }
