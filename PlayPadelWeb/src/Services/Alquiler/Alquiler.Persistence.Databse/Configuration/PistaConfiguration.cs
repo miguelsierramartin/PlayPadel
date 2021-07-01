@@ -20,8 +20,8 @@ namespace Alquiler.Persistence.Databse.Configuration
                 pistas.Add(new Pista
                 {
                     PistaID = i,
-                    Nombre = $"Pista {i}"
-                });
+                    Nombre = (Common.Enums.PistaNumerada)i-1
+                }) ;
             }
 
             entityBuilder.HasData(pistas);

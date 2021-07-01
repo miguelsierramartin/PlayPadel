@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\src\Services\Alquiler\Alquiler.Common\Alquiler.Common.csproj" />
     <ProjectReference Include="..\src\Services\Identity\Identity.Domain\Identity.Domain.csproj" />
   </ItemGroup>
 

@@ -2352,7 +2352,6 @@
       },
       "Order.Service.Queries/1.0.0": {
         "dependencies": {
-          "Order.Common": "1.0.0",
           "Order.Persistence.Database": "1.0.0",
           "Service.Common.Collection": "1.0.0",
           "Service.Common.Mapping": "1.0.0",

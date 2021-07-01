@@ -5023,7 +5023,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Order.Common >= 1.0.0",
       "Order.Persistence.Database >= 1.0.0",
       "Service.Common.Collection >= 1.0.0",
       "Service.Common.Mapping >= 1.0.0",
@@ -5065,9 +5064,6 @@
             },
             "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Common\\Service.Common.Paging\\Service.Common.Paging.csproj": {
               "projectPath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Common\\Service.Common.Paging\\Service.Common.Paging.csproj"
-            },
-            "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Order\\Order.Common\\Order.Common.csproj": {
-              "projectPath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Order\\Order.Common\\Order.Common.csproj"
             },
             "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Order\\Order.Persistence.Database\\Order.Persistence.Database.csproj": {
               "projectPath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Order\\Order.Persistence.Database\\Order.Persistence.Database.csproj"

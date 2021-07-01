@@ -1,4 +1,5 @@
 ﻿using System;
+using static Alquiler.Common.Enums;
 
 namespace Alquiler.Domain
 {
@@ -6,7 +7,7 @@ namespace Alquiler.Domain
     {
         public int PistaID { get; set;}
 
-        public string Nombre { get; set; }
+        public PistaNumerada Nombre { get; set; }
 
 
     }

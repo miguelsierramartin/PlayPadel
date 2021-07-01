@@ -27,7 +27,7 @@ namespace Alquiler.Persistence.Database
             ModelConfig(builder);
         }
 
-        public DbSet<Domain.Pista> Pistas { get; set; }
+        public DbSet<Pista> Pistas { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
 
         private void ModelConfig(ModelBuilder modelBuilder)
