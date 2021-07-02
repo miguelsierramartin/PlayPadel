@@ -393,7 +393,7 @@ resource "azurerm_servicebus_namespace" "service_bus_staging" {
   }
 }
 
-resource "azurerm_servicebus_topic" "example" {
+resource "azurerm_servicebus_topic" "service_bus_topics_sta" {
   name                = "order-stock-update"
   resource_group_name = azurerm_resource_group.PlayPadel-Sta.name
   namespace_name      = azurerm_servicebus_namespace.service_bus_staging.name
@@ -412,7 +412,7 @@ resource "azurerm_servicebus_namespace" "service_bus_production" {
   }
 }
 
-resource "azurerm_servicebus_topic" "example" {
+resource "azurerm_servicebus_topic" "service_bus_topics_prod" {
   name                = "order-stock-update"
   resource_group_name = azurerm_resource_group.PlayPadel-Prod.name
   namespace_name      = azurerm_servicebus_namespace.service_bus_production.name
