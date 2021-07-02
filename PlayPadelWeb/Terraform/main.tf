@@ -380,7 +380,7 @@ resource "azurerm_app_service" "app_service_authentication_production" {
 
 }
 
-#Definimos la cola de Azure Service Bus 
+#Definimos la cola de Azure Service Bus  
 
 resource "azurerm_servicebus_namespace" "service_bus_staging" {
   name                = "playpadel-servicebus-namespaceSta"
