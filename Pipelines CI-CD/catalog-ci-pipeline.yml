@@ -45,7 +45,7 @@ steps:
     projectKey: 'PlayPadelCatalog'
     projectName: 'PlayPadel Catalog.API'
     extraProperties: |
-     sonar.exclusions=**/obj/**,**/*.dll
+     sonar.exclusions=**/obj/**,**/*.dll,**/PlayPadelWeb/src/Services/Catalog/Catalog.Persistence.Database/Migrations/*
      sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/**/coverage.opencover.xml
      sonar.cs.vstest.reportsPaths=$(Agent.TempDirectory)/*.trx
 
