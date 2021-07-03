@@ -135,3 +135,4 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Tests\obj\Debug\netcoreapp3.1\Catalog.Tests.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Tests\obj\Debug\netcoreapp3.1\Catalog.Tests.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Tests\obj\Debug\netcoreapp3.1\Catalog.Tests.genruntimeconfig.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Tests\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

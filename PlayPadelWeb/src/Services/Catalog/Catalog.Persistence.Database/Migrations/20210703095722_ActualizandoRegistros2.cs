@@ -2,22 +2,1589 @@
 
 namespace Catalog.Persistence.Database.Migrations
 {
-    public partial class ActualizandoPrecio : Migration
+    public partial class ActualizandoRegistros2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Price",
-                schema: "Catalog",
-                table: "Products");
-
-            migrationBuilder.AddColumn<decimal>(
-                name: "Precio",
+            migrationBuilder.UpdateData(
                 schema: "Catalog",
                 table: "Products",
-                nullable: false,
-                defaultValue: 0m);
+                keyColumn: "ProductId",
+                keyValue: 1,
+                column: "Precio",
+                value: 238m);
 
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 2,
+                column: "Precio",
+                value: 612m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 3,
+                column: "Precio",
+                value: 304m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 4,
+                column: "Precio",
+                value: 287m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 5,
+                column: "Precio",
+                value: 385m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 6,
+                column: "Precio",
+                value: 337m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 7,
+                column: "Precio",
+                value: 395m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 8,
+                column: "Precio",
+                value: 405m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 9,
+                column: "Precio",
+                value: 244m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 10,
+                column: "Precio",
+                value: 108m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 11,
+                column: "Precio",
+                value: 114m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 12,
+                column: "Precio",
+                value: 921m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 13,
+                column: "Precio",
+                value: 517m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 14,
+                column: "Precio",
+                value: 713m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 15,
+                column: "Precio",
+                value: 686m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 16,
+                column: "Precio",
+                value: 694m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 17,
+                column: "Precio",
+                value: 727m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 18,
+                column: "Precio",
+                value: 552m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 19,
+                column: "Precio",
+                value: 401m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 20,
+                column: "Precio",
+                value: 138m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 21,
+                column: "Precio",
+                value: 530m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 22,
+                column: "Precio",
+                value: 767m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 23,
+                column: "Precio",
+                value: 620m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 24,
+                column: "Precio",
+                value: 963m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 25,
+                column: "Precio",
+                value: 416m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 26,
+                column: "Precio",
+                value: 831m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 27,
+                column: "Precio",
+                value: 579m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 28,
+                column: "Precio",
+                value: 739m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 29,
+                column: "Precio",
+                value: 739m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 30,
+                column: "Precio",
+                value: 753m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 31,
+                column: "Precio",
+                value: 118m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 32,
+                column: "Precio",
+                value: 358m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 33,
+                column: "Precio",
+                value: 922m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 34,
+                column: "Precio",
+                value: 253m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 35,
+                column: "Precio",
+                value: 880m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 36,
+                column: "Precio",
+                value: 323m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 37,
+                column: "Precio",
+                value: 405m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 38,
+                column: "Precio",
+                value: 248m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 39,
+                column: "Precio",
+                value: 413m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 40,
+                column: "Precio",
+                value: 946m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 41,
+                column: "Precio",
+                value: 992m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 42,
+                column: "Precio",
+                value: 257m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 43,
+                column: "Precio",
+                value: 852m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 44,
+                column: "Precio",
+                value: 101m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 45,
+                column: "Precio",
+                value: 742m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 46,
+                column: "Precio",
+                value: 244m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 47,
+                column: "Precio",
+                value: 642m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 48,
+                column: "Precio",
+                value: 309m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 49,
+                column: "Precio",
+                value: 509m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 50,
+                column: "Precio",
+                value: 765m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 51,
+                column: "Precio",
+                value: 690m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 52,
+                column: "Precio",
+                value: 304m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 53,
+                column: "Precio",
+                value: 843m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 54,
+                column: "Precio",
+                value: 628m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 55,
+                column: "Precio",
+                value: 421m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 56,
+                column: "Precio",
+                value: 471m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 57,
+                column: "Precio",
+                value: 992m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 58,
+                column: "Precio",
+                value: 340m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 59,
+                column: "Precio",
+                value: 871m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 60,
+                column: "Precio",
+                value: 553m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 61,
+                column: "Precio",
+                value: 758m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 62,
+                column: "Precio",
+                value: 655m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 63,
+                column: "Precio",
+                value: 665m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 64,
+                column: "Precio",
+                value: 490m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 65,
+                column: "Precio",
+                value: 990m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 66,
+                column: "Precio",
+                value: 755m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 67,
+                column: "Precio",
+                value: 999m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 68,
+                column: "Precio",
+                value: 364m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 69,
+                column: "Precio",
+                value: 832m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 70,
+                column: "Precio",
+                value: 462m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 71,
+                column: "Precio",
+                value: 389m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 72,
+                column: "Precio",
+                value: 578m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 73,
+                column: "Precio",
+                value: 238m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 74,
+                column: "Precio",
+                value: 455m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 75,
+                column: "Precio",
+                value: 146m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 76,
+                column: "Precio",
+                value: 373m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 77,
+                column: "Precio",
+                value: 914m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 78,
+                column: "Precio",
+                value: 618m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 79,
+                column: "Precio",
+                value: 320m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 80,
+                column: "Precio",
+                value: 272m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 81,
+                column: "Precio",
+                value: 289m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 82,
+                column: "Precio",
+                value: 369m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 83,
+                column: "Precio",
+                value: 330m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 84,
+                column: "Precio",
+                value: 974m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 85,
+                column: "Precio",
+                value: 163m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 86,
+                column: "Precio",
+                value: 813m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 87,
+                column: "Precio",
+                value: 514m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 88,
+                column: "Precio",
+                value: 393m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 89,
+                column: "Precio",
+                value: 831m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 90,
+                column: "Precio",
+                value: 508m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 91,
+                column: "Precio",
+                value: 331m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 92,
+                column: "Precio",
+                value: 165m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 93,
+                column: "Precio",
+                value: 377m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 94,
+                column: "Precio",
+                value: 859m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 95,
+                column: "Precio",
+                value: 287m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 96,
+                column: "Precio",
+                value: 436m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 97,
+                column: "Precio",
+                value: 591m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 98,
+                column: "Precio",
+                value: 462m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 99,
+                column: "Precio",
+                value: 111m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Products",
+                keyColumn: "ProductId",
+                keyValue: 100,
+                column: "Precio",
+                value: 987m);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 1,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 2,
+                column: "Stock",
+                value: 10);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 3,
+                column: "Stock",
+                value: 17);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 4,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 5,
+                column: "Stock",
+                value: 7);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 6,
+                column: "Stock",
+                value: 3);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 7,
+                column: "Stock",
+                value: 8);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 8,
+                column: "Stock",
+                value: 12);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 9,
+                column: "Stock",
+                value: 9);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 10,
+                column: "Stock",
+                value: 14);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 11,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 12,
+                column: "Stock",
+                value: 10);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 13,
+                column: "Stock",
+                value: 1);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 14,
+                column: "Stock",
+                value: 16);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 15,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 16,
+                column: "Stock",
+                value: 1);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 17,
+                column: "Stock",
+                value: 8);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 18,
+                column: "Stock",
+                value: 7);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 19,
+                column: "Stock",
+                value: 4);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 20,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 21,
+                column: "Stock",
+                value: 1);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 22,
+                column: "Stock",
+                value: 19);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 23,
+                column: "Stock",
+                value: 9);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 24,
+                column: "Stock",
+                value: 17);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 25,
+                column: "Stock",
+                value: 13);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 26,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 27,
+                column: "Stock",
+                value: 4);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 28,
+                column: "Stock",
+                value: 1);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 29,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 30,
+                column: "Stock",
+                value: 4);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 31,
+                column: "Stock",
+                value: 14);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 32,
+                column: "Stock",
+                value: 14);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 33,
+                column: "Stock",
+                value: 9);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 34,
+                column: "Stock",
+                value: 4);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 35,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 36,
+                column: "Stock",
+                value: 15);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 37,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 38,
+                column: "Stock",
+                value: 3);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 39,
+                column: "Stock",
+                value: 16);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 40,
+                column: "Stock",
+                value: 11);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 41,
+                column: "Stock",
+                value: 8);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 42,
+                column: "Stock",
+                value: 18);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 43,
+                column: "Stock",
+                value: 9);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 44,
+                column: "Stock",
+                value: 17);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 45,
+                column: "Stock",
+                value: 10);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 46,
+                column: "Stock",
+                value: 18);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 47,
+                column: "Stock",
+                value: 14);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 48,
+                column: "Stock",
+                value: 8);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 49,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 50,
+                column: "Stock",
+                value: 3);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 51,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 52,
+                column: "Stock",
+                value: 15);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 53,
+                column: "Stock",
+                value: 13);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 54,
+                column: "Stock",
+                value: 10);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 55,
+                column: "Stock",
+                value: 19);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 56,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 57,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 58,
+                column: "Stock",
+                value: 19);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 59,
+                column: "Stock",
+                value: 13);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 60,
+                column: "Stock",
+                value: 2);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 61,
+                column: "Stock",
+                value: 19);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 62,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 63,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 64,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 65,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 66,
+                column: "Stock",
+                value: 12);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 67,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 68,
+                column: "Stock",
+                value: 16);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 69,
+                column: "Stock",
+                value: 15);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 70,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 71,
+                column: "Stock",
+                value: 15);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 72,
+                column: "Stock",
+                value: 4);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 73,
+                column: "Stock",
+                value: 11);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 74,
+                column: "Stock",
+                value: 12);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 75,
+                column: "Stock",
+                value: 11);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 76,
+                column: "Stock",
+                value: 2);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 77,
+                column: "Stock",
+                value: 10);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 78,
+                column: "Stock",
+                value: 11);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 79,
+                column: "Stock",
+                value: 6);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 80,
+                column: "Stock",
+                value: 15);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 81,
+                column: "Stock",
+                value: 11);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 82,
+                column: "Stock",
+                value: 15);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 84,
+                column: "Stock",
+                value: 3);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 85,
+                column: "Stock",
+                value: 19);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 86,
+                column: "Stock",
+                value: 19);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 87,
+                column: "Stock",
+                value: 0);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 88,
+                column: "Stock",
+                value: 18);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 89,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 90,
+                column: "Stock",
+                value: 13);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 92,
+                column: "Stock",
+                value: 5);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 93,
+                column: "Stock",
+                value: 10);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 94,
+                column: "Stock",
+                value: 13);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 95,
+                column: "Stock",
+                value: 12);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 97,
+                column: "Stock",
+                value: 12);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 98,
+                column: "Stock",
+                value: 3);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 99,
+                column: "Stock",
+                value: 17);
+
+            migrationBuilder.UpdateData(
+                schema: "Catalog",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
+                keyValue: 100,
+                column: "Stock",
+                value: 18);
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
             migrationBuilder.UpdateData(
                 schema: "Catalog",
                 table: "Products",
@@ -998,2129 +2565,537 @@ namespace Catalog.Persistence.Database.Migrations
                 schema: "Catalog",
                 table: "Stocks",
                 keyColumn: "ProductInStockId",
-                keyValue: 24,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 25,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 26,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 27,
-                column: "Stock",
-                value: 5);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 28,
-                column: "Stock",
-                value: 9);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 29,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 30,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 31,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 32,
-                column: "Stock",
-                value: 5);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 33,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 34,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 35,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 36,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 37,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 38,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 39,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 40,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 41,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 42,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 43,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 44,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 45,
-                column: "Stock",
-                value: 15);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 46,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 47,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 48,
-                column: "Stock",
-                value: 15);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 49,
-                column: "Stock",
-                value: 7);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 50,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 51,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 52,
-                column: "Stock",
-                value: 9);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 53,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 54,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 55,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 56,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 57,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 58,
-                column: "Stock",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 59,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 60,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 61,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 62,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 63,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 64,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 65,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 66,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 67,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 68,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 69,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 70,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 71,
-                column: "Stock",
-                value: 2);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 72,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 73,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 74,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 75,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 76,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 77,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 78,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 79,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 80,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 81,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 82,
-                column: "Stock",
-                value: 9);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 83,
-                column: "Stock",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 84,
-                column: "Stock",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 85,
-                column: "Stock",
-                value: 7);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 86,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 87,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 88,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 89,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 91,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 92,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 93,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 94,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 95,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 97,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 98,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 99,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 100,
-                column: "Stock",
-                value: 4);
-        }
-
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropColumn(
-                name: "Precio",
-                schema: "Catalog",
-                table: "Products");
-
-            migrationBuilder.AddColumn<decimal>(
-                name: "Price",
-                schema: "Catalog",
-                table: "Products",
-                type: "decimal(18,2)",
-                nullable: false,
-                defaultValue: 0m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 1,
-                column: "Price",
-                value: 937m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 2,
-                column: "Price",
-                value: 772m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 3,
-                column: "Price",
-                value: 314m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 4,
-                column: "Price",
-                value: 751m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 5,
-                column: "Price",
-                value: 654m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 6,
-                column: "Price",
-                value: 964m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 7,
-                column: "Price",
-                value: 560m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 8,
-                column: "Price",
-                value: 858m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 9,
-                column: "Price",
-                value: 820m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 10,
-                column: "Price",
-                value: 307m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 11,
-                column: "Price",
-                value: 155m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 12,
-                column: "Price",
-                value: 777m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 13,
-                column: "Price",
-                value: 938m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 14,
-                column: "Price",
-                value: 471m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 15,
-                column: "Price",
-                value: 357m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 16,
-                column: "Price",
-                value: 513m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 17,
-                column: "Price",
-                value: 603m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 18,
-                column: "Price",
-                value: 207m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 19,
-                column: "Price",
-                value: 510m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 20,
-                column: "Price",
-                value: 294m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 21,
-                column: "Price",
-                value: 658m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 22,
-                column: "Price",
-                value: 720m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
                 keyValue: 23,
-                column: "Price",
-                value: 584m);
+                column: "Stock",
+                value: 3);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 24,
-                column: "Price",
-                value: 103m);
+                column: "Stock",
+                value: 19);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 25,
-                column: "Price",
-                value: 810m);
+                column: "Stock",
+                value: 6);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 26,
-                column: "Price",
-                value: 141m);
+                column: "Stock",
+                value: 14);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 27,
-                column: "Price",
-                value: 770m);
+                column: "Stock",
+                value: 5);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 28,
-                column: "Price",
-                value: 365m);
+                column: "Stock",
+                value: 9);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 29,
-                column: "Price",
-                value: 879m);
+                column: "Stock",
+                value: 13);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 30,
-                column: "Price",
-                value: 570m);
+                column: "Stock",
+                value: 3);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 31,
-                column: "Price",
-                value: 315m);
+                column: "Stock",
+                value: 17);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 32,
-                column: "Price",
-                value: 650m);
+                column: "Stock",
+                value: 5);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 33,
-                column: "Price",
-                value: 743m);
+                column: "Stock",
+                value: 4);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 34,
-                column: "Price",
-                value: 171m);
+                column: "Stock",
+                value: 6);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 35,
-                column: "Price",
-                value: 522m);
+                column: "Stock",
+                value: 6);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 36,
-                column: "Price",
-                value: 868m);
+                column: "Stock",
+                value: 19);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 37,
-                column: "Price",
-                value: 857m);
+                column: "Stock",
+                value: 14);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 38,
-                column: "Price",
-                value: 179m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 39,
-                column: "Price",
-                value: 493m);
+                column: "Stock",
+                value: 8);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 40,
-                column: "Price",
-                value: 485m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 41,
-                column: "Price",
-                value: 988m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 42,
-                column: "Price",
-                value: 570m);
+                column: "Stock",
+                value: 14);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 43,
-                column: "Price",
-                value: 542m);
+                column: "Stock",
+                value: 13);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 44,
-                column: "Price",
-                value: 397m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 45,
-                column: "Price",
-                value: 580m);
+                column: "Stock",
+                value: 15);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 46,
-                column: "Price",
-                value: 821m);
+                column: "Stock",
+                value: 13);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 47,
-                column: "Price",
-                value: 363m);
+                column: "Stock",
+                value: 0);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 48,
-                column: "Price",
-                value: 149m);
+                column: "Stock",
+                value: 15);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 49,
-                column: "Price",
-                value: 662m);
+                column: "Stock",
+                value: 7);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 50,
-                column: "Price",
-                value: 211m);
+                column: "Stock",
+                value: 11);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 51,
-                column: "Price",
-                value: 453m);
+                column: "Stock",
+                value: 16);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 52,
-                column: "Price",
-                value: 714m);
+                column: "Stock",
+                value: 9);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 53,
-                column: "Price",
-                value: 964m);
+                column: "Stock",
+                value: 8);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 54,
-                column: "Price",
-                value: 265m);
+                column: "Stock",
+                value: 14);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 55,
-                column: "Price",
-                value: 857m);
+                column: "Stock",
+                value: 12);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 56,
-                column: "Price",
-                value: 317m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 57,
-                column: "Price",
-                value: 287m);
+                column: "Stock",
+                value: 4);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 58,
-                column: "Price",
-                value: 310m);
+                column: "Stock",
+                value: 1);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 59,
-                column: "Price",
-                value: 941m);
+                column: "Stock",
+                value: 17);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 60,
-                column: "Price",
-                value: 613m);
+                column: "Stock",
+                value: 17);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 61,
-                column: "Price",
-                value: 293m);
+                column: "Stock",
+                value: 16);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 62,
-                column: "Price",
-                value: 294m);
+                column: "Stock",
+                value: 8);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 63,
-                column: "Price",
-                value: 979m);
+                column: "Stock",
+                value: 17);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 64,
-                column: "Price",
-                value: 350m);
+                column: "Stock",
+                value: 3);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 65,
-                column: "Price",
-                value: 991m);
+                column: "Stock",
+                value: 3);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 66,
-                column: "Price",
-                value: 504m);
+                column: "Stock",
+                value: 11);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 67,
-                column: "Price",
-                value: 133m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 68,
-                column: "Price",
-                value: 866m);
+                column: "Stock",
+                value: 17);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 69,
-                column: "Price",
-                value: 949m);
+                column: "Stock",
+                value: 6);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 70,
-                column: "Price",
-                value: 488m);
+                column: "Stock",
+                value: 0);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 71,
-                column: "Price",
-                value: 655m);
+                column: "Stock",
+                value: 2);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 72,
-                column: "Price",
-                value: 523m);
+                column: "Stock",
+                value: 19);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 73,
-                column: "Price",
-                value: 714m);
+                column: "Stock",
+                value: 19);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 74,
-                column: "Price",
-                value: 125m);
+                column: "Stock",
+                value: 0);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 75,
-                column: "Price",
-                value: 306m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 76,
-                column: "Price",
-                value: 187m);
+                column: "Stock",
+                value: 0);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 77,
-                column: "Price",
-                value: 278m);
+                column: "Stock",
+                value: 6);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 78,
-                column: "Price",
-                value: 286m);
+                column: "Stock",
+                value: 12);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 79,
-                column: "Price",
-                value: 523m);
+                column: "Stock",
+                value: 3);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 80,
-                column: "Price",
-                value: 989m);
+                column: "Stock",
+                value: 13);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 81,
-                column: "Price",
-                value: 777m);
+                column: "Stock",
+                value: 14);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 82,
-                column: "Price",
-                value: 721m);
+                column: "Stock",
+                value: 9);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 83,
-                column: "Price",
-                value: 703m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 84,
-                column: "Price",
-                value: 767m);
+                column: "Stock",
+                value: 1);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 85,
-                column: "Price",
-                value: 217m);
+                column: "Stock",
+                value: 7);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 86,
-                column: "Price",
-                value: 601m);
+                column: "Stock",
+                value: 8);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 87,
-                column: "Price",
-                value: 686m);
+                column: "Stock",
+                value: 16);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 88,
-                column: "Price",
-                value: 577m);
+                column: "Stock",
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 89,
-                column: "Price",
-                value: 314m);
+                column: "Stock",
+                value: 13);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
+                table: "Stocks",
+                keyColumn: "ProductInStockId",
                 keyValue: 90,
-                column: "Price",
-                value: 305m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 91,
-                column: "Price",
-                value: 681m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 92,
-                column: "Price",
-                value: 647m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 93,
-                column: "Price",
-                value: 237m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 94,
-                column: "Price",
-                value: 879m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 95,
-                column: "Price",
-                value: 291m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 96,
-                column: "Price",
-                value: 793m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 97,
-                column: "Price",
-                value: 591m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 98,
-                column: "Price",
-                value: 292m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 99,
-                column: "Price",
-                value: 406m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Products",
-                keyColumn: "ProductId",
-                keyValue: 100,
-                column: "Price",
-                value: 175m);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 1,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 2,
-                column: "Stock",
-                value: 15);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 3,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 4,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 5,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 6,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 7,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 8,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 9,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 10,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 11,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 12,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 13,
-                column: "Stock",
-                value: 7);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 14,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 15,
-                column: "Stock",
-                value: 7);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 16,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 17,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 18,
-                column: "Stock",
-                value: 2);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 19,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 20,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 21,
-                column: "Stock",
-                value: 9);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 22,
                 column: "Stock",
                 value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 24,
-                column: "Stock",
-                value: 5);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 25,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 26,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 27,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 28,
-                column: "Stock",
-                value: 7);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 29,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 30,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 31,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 32,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 33,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 34,
-                column: "Stock",
-                value: 5);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 35,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 36,
-                column: "Stock",
-                value: 7);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 37,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 38,
-                column: "Stock",
-                value: 0);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 39,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 40,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 41,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 42,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 43,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 44,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 45,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 46,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 47,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 48,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 49,
-                column: "Stock",
-                value: 9);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 50,
-                column: "Stock",
-                value: 2);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 51,
-                column: "Stock",
-                value: 14);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 52,
-                column: "Stock",
-                value: 2);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 53,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 54,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 55,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 56,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 57,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 58,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 59,
-                column: "Stock",
-                value: 5);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 60,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 61,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 62,
-                column: "Stock",
-                value: 15);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 63,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 64,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 65,
-                column: "Stock",
-                value: 15);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 66,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 67,
-                column: "Stock",
-                value: 8);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 68,
-                column: "Stock",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 69,
-                column: "Stock",
-                value: 13);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 70,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 71,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 72,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 73,
-                column: "Stock",
-                value: 3);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 74,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 75,
-                column: "Stock",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 76,
-                column: "Stock",
-                value: 16);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 77,
-                column: "Stock",
-                value: 2);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 78,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 79,
-                column: "Stock",
-                value: 11);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 80,
-                column: "Stock",
-                value: 2);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 81,
-                column: "Stock",
-                value: 19);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 82,
-                column: "Stock",
-                value: 12);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 83,
-                column: "Stock",
-                value: 17);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 84,
-                column: "Stock",
-                value: 4);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 85,
-                column: "Stock",
-                value: 18);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 86,
-                column: "Stock",
-                value: 15);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 87,
-                column: "Stock",
-                value: 10);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 88,
-                column: "Stock",
-                value: 6);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 89,
-                column: "Stock",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                schema: "Catalog",
-                table: "Stocks",
-                keyColumn: "ProductInStockId",
-                keyValue: 91,
-                column: "Stock",
-                value: 15);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3128,7 +3103,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 92,
                 column: "Stock",
-                value: 2);
+                value: 12);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3136,7 +3111,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 93,
                 column: "Stock",
-                value: 14);
+                value: 13);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3144,7 +3119,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 94,
                 column: "Stock",
-                value: 7);
+                value: 11);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3152,7 +3127,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 95,
                 column: "Stock",
-                value: 11);
+                value: 14);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3160,7 +3135,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 97,
                 column: "Stock",
-                value: 0);
+                value: 17);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3168,7 +3143,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 98,
                 column: "Stock",
-                value: 17);
+                value: 10);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3176,7 +3151,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 99,
                 column: "Stock",
-                value: 15);
+                value: 6);
 
             migrationBuilder.UpdateData(
                 schema: "Catalog",
@@ -3184,7 +3159,7 @@ namespace Catalog.Persistence.Database.Migrations
                 keyColumn: "ProductInStockId",
                 keyValue: 100,
                 column: "Stock",
-                value: 0);
+                value: 4);
         }
     }
 }

@@ -2604,6 +2604,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Catalog.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "3.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
         },
         "compile": {

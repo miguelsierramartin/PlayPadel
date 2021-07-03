@@ -3,9 +3,9 @@
     public class ProductDto
     {
         public int ProductId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public decimal Precio { get; set; }
         public ProductInStockDto Stock { get; set; }
     }
 }
