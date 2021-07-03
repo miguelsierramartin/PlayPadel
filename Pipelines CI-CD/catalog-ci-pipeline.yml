@@ -42,8 +42,8 @@ steps:
     SonarCloud: 'PlayPadelSC'
     organization: 'miguelsierramartin'
     scannerMode: 'MSBuild'
-    projectKey: 'PlayPadelSC'
-    projectName: 'demoPlayPadelSC'
+    projectKey: 'PlayPadelCatalog'
+    projectName: 'PlayPadel Catalog.API'
 
 - task: DotNetCoreCLI@2
   displayName: Build
