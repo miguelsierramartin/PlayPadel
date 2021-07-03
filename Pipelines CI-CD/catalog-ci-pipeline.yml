@@ -44,6 +44,10 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'PlayPadelCatalog'
     projectName: 'PlayPadel Catalog.API'
+    extraProperties: |
+      sonar.exclusions=**/obj/**,**/*.dll
+      sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/**/coverage.opencover.xml
+      sonar.cs.vstest.reportsPaths=$(Agent.TempDirectory)/*.trx
 
 - task: DotNetCoreCLI@2
   displayName: Build
