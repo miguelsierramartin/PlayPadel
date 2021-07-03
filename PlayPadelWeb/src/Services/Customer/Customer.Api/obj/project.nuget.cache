@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J3AjLb+g18T7hB4Xks+P79ED/dDFpx9eHYaglw24xScLTJsGN6bF9Uu9iw+lgpGPGZ7cWp2KkXhUIOk0aJOMwA==",
+  "dgSpecHash": "pgwGsyEDXDV66N+E0+znogp8McjGDbJ3RhSW9xJVzSoaBVDLywnmvHq2esbVcwSc4luu6RnZnvaFnztVWDxhCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Customer\\Customer.Api\\Customer.Api.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\migue\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\3.1.1\\aspnetcore.healthchecks.ui.client.3.1.1.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\3.1.1\\aspnetcore.healthchecks.ui.core.3.1.1.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\aspnetcore.healthchecks.ui.inmemory.storage\\3.1.1\\aspnetcore.healthchecks.ui.inmemory.storage.3.1.1.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\coverlet.msbuild\\3.0.3\\coverlet.msbuild.3.0.3.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\kubernetesclient\\1.6.10\\kubernetesclient.1.6.10.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
