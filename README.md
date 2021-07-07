@@ -10,10 +10,12 @@ Se requiere hacer uso de una metodología DevOps, apoyada por una herramienta, c
 
 Por último, en el caso de estudio práctico se aborda la elaboración de PlayPadel, una aplicación web de un club de pádel, dedicada a gestionar tanto las reservas de pistas como una tienda online. Esta aplicación va a disponer de alojamiento en el portal de Azure, donde su disposición va a estar basada en una arquitectura de microservicios. Por lo tanto, para la implementación de estos microservicios, mediante el framework .NET Core, se hace uso del IDE Visual Studio, encargado de ser el entorno de desarrollo del código; y de Github para alojar las versiones del código fuente de cada uno de los microservicios de la aplicación.
 
+<h4>Arquitectura</h4>
+
+![Arquitecura PlayPadel microservicios](https://user-images.githubusercontent.com/60613241/124792209-1869e100-df4d-11eb-8139-a28ed824e407.png)
+
+
 <h4>Microservicios</h4>
-
-
-
 Los microservicios que se crean son:
 
 •	Identity.Api: Es el microservicio encargado de gestionar todo lo relacionado con los usuarios que están registrados en la aplicación. A su vez, va a ser responsable de generar el token de acceso a nuestras distintas APIs.
@@ -28,6 +30,9 @@ Los microservicios que se crean son:
 •	Proxy.Layer: Es la capa encargada de comunicar los microservicios entre sí, a través de consultas HTTP a los microservicios que requieran de esa comunicación.
 
 •	Api.Gateways: Estos módulos van a permitir encapsular las consultas requeridas a nuestros microservicios. De esta manera, los microservicios no se ven expuestos al acceso por los clientes ni a la comunicación con los mismos y pueden permanecer de carácter privado.
+
+•	Web.Client: Es un proyecto web desarrollado como un razor page, centrado en facilitar la programación de escenarios en páginas.
+•	Authentication.Web.Client: Al contar con un proyecto web con la implementación de un formulario de acceso (log-in), vamos a tener un servicio de autenticación encargado de consumir y comunicarse con un único microservicio (Identity). El objetivo va a ser solicitar el token de acceso a la aplicación a ese microservicio y pasarle esa información al proyecto web del cliente, actúa como una pasarela de comunicación. 
 
 
 <h3>PIPELINES CI MICROSERVICIOS</h3>
