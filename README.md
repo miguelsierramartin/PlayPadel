@@ -6,9 +6,8 @@ Trabajo Fin de Grado, ETSISI - UPM 2020/2021
 Prácticas DevOps para la Automatización de la Integración y Despliegue Continuos en la Nube de Aplicaciones basadas en Microservicios .Net. Caso Práctico: PlayPadel
 
 <h4>Resumen</h4> 
-Se requiere hacer uso de una metodología DevOps, apoyada por una herramienta, como es Azure DevOps, que cubre las necesidades de este paradigma. Para llevar a cabo esto, se han creado plantillas de pipelines genéricas encargadas de diseñar la infraestructura de la aplicación. Así como pipelines de integración continua (CI) y despliegue continuo (CD) para cada uno de los microservicios, enfocados a la automatización en la construcción, prueba y despliegue de cada uno de los proyectos independientes, en un entorno de Staging (o pre-producción) en la nube de Azure, para posteriormente acabar pasando al entorno final de producción. A su vez, se utiliza la herramienta SonarCloud, lo que permite el análisis estático de código y por tanto, facilita la mejora en la calidad de este.
 
-Por último, en el caso de estudio práctico se aborda la elaboración de PlayPadel, una aplicación web de un club de pádel, dedicada a gestionar tanto las reservas de pistas como una tienda online. Esta aplicación va a disponer de alojamiento en el portal de Azure, donde su disposición va a estar basada en una arquitectura de microservicios. Por lo tanto, para la implementación de estos microservicios, mediante el framework .NET Core, se hace uso del IDE Visual Studio, encargado de ser el entorno de desarrollo del código; y de Github para alojar las versiones del código fuente de cada uno de los microservicios de la aplicación.
+En el caso de estudio práctico se aborda la elaboración de PlayPadel, una aplicación web de un club de pádel, dedicada a gestionar tanto las reservas de pistas como una tienda online. Esta aplicación va a disponer de alojamiento en el portal de Azure, donde su disposición va a estar basada en una arquitectura de microservicios. Por lo tanto, para la implementación de estos microservicios, mediante el framework .NET Core, se hace uso del IDE Visual Studio, encargado de ser el entorno de desarrollo del código; y de Github para alojar las versiones del código fuente de cada uno de los microservicios de la aplicación.
 
 <h4>Arquitectura</h4>
 
@@ -34,6 +33,8 @@ Los microservicios que se crean son:
 •	Web.Client: Es un proyecto web desarrollado como un razor page, centrado en facilitar la programación de escenarios en páginas.
 •	Authentication.Web.Client: Al contar con un proyecto web con la implementación de un formulario de acceso (log-in), vamos a tener un servicio de autenticación encargado de consumir y comunicarse con un único microservicio (Identity). El objetivo va a ser solicitar el token de acceso a la aplicación a ese microservicio y pasarle esa información al proyecto web del cliente, actúa como una pasarela de comunicación. 
 
+
+Se requiere hacer uso de una metodología DevOps, apoyada por una herramienta, como es Azure DevOps, que cubre las necesidades de este paradigma. Para llevar a cabo esto, se han creado plantillas de pipelines genéricas encargadas de diseñar la infraestructura de la aplicación. Así como pipelines de integración continua (CI) y despliegue continuo (CD) para cada uno de los microservicios, enfocados a la automatización en la construcción, prueba y despliegue de cada uno de los proyectos independientes, en un entorno de Staging (o pre-producción) en la nube de Azure, para posteriormente acabar pasando al entorno final de producción. A su vez, se utiliza la herramienta SonarCloud, lo que permite el análisis estático de código y por tanto, facilita la mejora en la calidad de este.
 
 <h3>PIPELINES CI MICROSERVICIOS</h3>
 
