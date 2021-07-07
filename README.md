@@ -36,6 +36,9 @@ Los microservicios que se crean son:
 
 Se requiere hacer uso de una metodología DevOps, apoyada por una herramienta, como es Azure DevOps, que cubre las necesidades de este paradigma. Para llevar a cabo esto, se han creado plantillas de pipelines genéricas encargadas de diseñar la infraestructura de la aplicación. Así como pipelines de integración continua (CI) y despliegue continuo (CD) para cada uno de los microservicios, enfocados a la automatización en la construcción, prueba y despliegue de cada uno de los proyectos independientes, en un entorno de Staging (o pre-producción) en la nube de Azure, para posteriormente acabar pasando al entorno final de producción. A su vez, se utiliza la herramienta SonarCloud, lo que permite el análisis estático de código y por tanto, facilita la mejora en la calidad de este.
 
+<h4>Análisis de código: SonarCloud</h4>
+[enlace](https://sonarcloud.io/organizations/miguelsierramartin/projects?sort=coverage)
+
 <h3>PIPELINES CI MICROSERVICIOS</h3>
 
 | Pipeline | Status | Pipeline | Status |
