@@ -45,7 +45,7 @@ steps:
     projectKey: 'PlayPadelCatalog'
     projectName: 'PlayPadel Catalog.API'
     extraProperties: |
-     sonar.exclusions=**/obj/**,**/*.dll
+     sonar.exclusions=**/obj/**,**/*.dll,**/PlayPadelWeb/src/Services/Catalog/Catalog.Persistence.Database/Migrations/*
      sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/**/coverage.opencover.xml
      sonar.cs.vstest.reportsPaths=$(Agent.TempDirectory)/*.trx
 
@@ -62,7 +62,7 @@ steps:
     command: 'test'
     arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
     publishTestResults: true
-    projects: '**/test-library/*.csproj' # update with your test project directory
+    projects: '**/src/Services/Catalog/Catalog.Tests' # update with your test project directory
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage report'
