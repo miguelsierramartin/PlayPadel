@@ -31,20 +31,8 @@ namespace Catalog.Api.Controllers
         public string Get()
         {
 
-            return "Running Catalog ..";
+            return "Corriendo el microservicio de Catalog ..";
         }
 
-        [HttpGet]
-        public async Task<DataCollection<ProductDto>> GetAll(int page = 1, int take = 10, string ids = null)
-        {
-            IEnumerable<int> products = null;
-
-            if (!string.IsNullOrEmpty(ids))
-            {
-                products = ids.Split(',').Select(x => Convert.ToInt32(x));
-            }
-
-            return await _productQueryService.GetAllAsync(page, take, products);
-        }
     }
 }
