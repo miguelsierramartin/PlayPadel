@@ -118,3 +118,4 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Api\obj\Debug\netcoreapp3.1\Catalog.Api.dll
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Api\obj\Debug\netcoreapp3.1\Catalog.Api.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Api\obj\Debug\netcoreapp3.1\Catalog.Api.genruntimeconfig.cache
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping

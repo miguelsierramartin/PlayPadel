@@ -44,6 +44,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
           "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "3.1.1",
+          "coverlet.msbuild": "3.0.3",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -399,6 +400,7 @@
           "lib/netstandard2.0/HealthChecks.UI.InMemory.Storage.dll": {}
         }
       },
+      "coverlet.msbuild/3.0.3": {},
       "KubernetesClient/1.6.10": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "3.0.0",
@@ -3962,6 +3964,13 @@
       "sha512": "sha512-PfxXydEQHUWCH8naMlnLLR4cEi1/UrcCPpyo2L1SqTbaPZ5heG9yzqtl0G52WZVGkXJtpMelRoL4BBRmWsvuAQ==",
       "path": "aspnetcore.healthchecks.ui.inmemory.storage/3.1.1",
       "hashPath": "aspnetcore.healthchecks.ui.inmemory.storage.3.1.1.nupkg.sha512"
+    },
+    "coverlet.msbuild/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fzxcn4+TZEfNEPP96mzmGWnKARCVKkEdBfhor8oTVhQWtxwZz9NuxuJxK7A2j7X20Rr8BSIK8qGclIJgTW7lsg==",
+      "path": "coverlet.msbuild/3.0.3",
+      "hashPath": "coverlet.msbuild.3.0.3.nupkg.sha512"
     },
     "KubernetesClient/1.6.10": {
       "type": "package",

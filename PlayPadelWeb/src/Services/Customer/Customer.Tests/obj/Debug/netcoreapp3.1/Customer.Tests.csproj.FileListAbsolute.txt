@@ -152,3 +152,11 @@ C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Custom
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\obj\Debug\netcoreapp3.1\Customer.Tests.pdb
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\obj\Debug\netcoreapp3.1\Customer.Tests.genruntimeconfig.cache
 C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Catalog.Service.Queries.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Service.Common.Collection.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Service.Common.Mapping.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Service.Common.Paging.dll
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Catalog.Service.Queries.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Service.Common.Collection.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Service.Common.Mapping.pdb
+C:\Users\migue\git\PlayPadel\PlayPadel\PlayPadelWeb\src\Services\Customer\Customer.Tests\bin\Debug\netcoreapp3.1\Service.Common.Paging.pdb

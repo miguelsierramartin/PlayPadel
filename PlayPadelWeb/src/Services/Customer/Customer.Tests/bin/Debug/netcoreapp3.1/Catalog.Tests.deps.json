@@ -10,12 +10,14 @@
         "dependencies": {
           "Catalog.Persistence.Database": "1.0.0",
           "Catalog.Service.EventHandlers": "1.0.0",
+          "Catalog.Service.Queries": "1.0.0",
           "MSTest.TestAdapter": "2.1.0",
           "MSTest.TestFramework": "2.1.0",
           "Microsoft.EntityFrameworkCore.InMemory": "3.1.1",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "Moq": "4.13.1",
-          "coverlet.collector": "1.2.0"
+          "coverlet.collector": "1.2.0",
+          "coverlet.msbuild": "3.0.3"
         },
         "runtime": {
           "Catalog.Tests.dll": {}
@@ -42,6 +44,7 @@
         }
       },
       "coverlet.collector/1.2.0": {},
+      "coverlet.msbuild/3.0.3": {},
       "MediatR/9.0.0": {
         "runtime": {
           "lib/netstandard2.1/MediatR.dll": {
@@ -1655,6 +1658,36 @@
         "runtime": {
           "Catalog.Service.EventHandlers.dll": {}
         }
+      },
+      "Catalog.Service.Queries/1.0.0": {
+        "dependencies": {
+          "Catalog.Persistence.Database": "1.0.0",
+          "Service.Common.Collection": "1.0.0",
+          "Service.Common.Mapping": "1.0.0",
+          "Service.Common.Paging": "1.0.0"
+        },
+        "runtime": {
+          "Catalog.Service.Queries.dll": {}
+        }
+      },
+      "Service.Common.Collection/1.0.0": {
+        "runtime": {
+          "Service.Common.Collection.dll": {}
+        }
+      },
+      "Service.Common.Mapping/1.0.0": {
+        "runtime": {
+          "Service.Common.Mapping.dll": {}
+        }
+      },
+      "Service.Common.Paging/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.1",
+          "Service.Common.Collection": "1.0.0"
+        },
+        "runtime": {
+          "Service.Common.Paging.dll": {}
+        }
       }
     }
   },
@@ -1677,6 +1710,13 @@
       "sha512": "sha512-ZB+EGXsVBIn8cew7D3S2c+rgIlokKv1dSwsXEoiFQaNXF/BSxp9Rlfz/jV1ehSWH5XpLitfRxFNW3ok7uPDOXA==",
       "path": "coverlet.collector/1.2.0",
       "hashPath": "coverlet.collector.1.2.0.nupkg.sha512"
+    },
+    "coverlet.msbuild/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fzxcn4+TZEfNEPP96mzmGWnKARCVKkEdBfhor8oTVhQWtxwZz9NuxuJxK7A2j7X20Rr8BSIK8qGclIJgTW7lsg==",
+      "path": "coverlet.msbuild/3.0.3",
+      "hashPath": "coverlet.msbuild.3.0.3.nupkg.sha512"
     },
     "MediatR/9.0.0": {
       "type": "package",
@@ -2653,6 +2693,26 @@
       "sha512": ""
     },
     "Catalog.Service.EventHandlers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Catalog.Service.Queries/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Common.Collection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Common.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Common.Paging/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xQxatZLLcqGev5miB3S2aknztk6FLan8tDa4/pa5JECsQ/o8g3OZ63KCKOv3N8rjqQRFCNFsk68QTLEnYttMTQ==",
+  "dgSpecHash": "tIub0oWz10agZD2mEFKUAxGMe4Ps1py2J9IubhTCf9W0IbqdM7FsVpYZ12wBqosHjuvApZ5qoxRuiJPWkRNLdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\migue\\git\\PlayPadel\\PlayPadel\\PlayPadelWeb\\src\\Services\\Catalog\\Catalog.Tests\\Catalog.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\migue\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\coverlet.msbuild\\3.0.3\\coverlet.msbuild.3.0.3.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
